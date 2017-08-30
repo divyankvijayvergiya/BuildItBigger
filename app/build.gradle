@@ -27,6 +27,8 @@ android {
             applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
+    sourceCompatibility = "1.7"
+    targetCompatibility = "1.7"
 }
 
 

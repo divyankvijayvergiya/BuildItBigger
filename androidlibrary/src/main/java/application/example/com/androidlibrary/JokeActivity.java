@@ -7,4 +7,6 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class JokeActivity extends AppCompatActivity {
+    public static String JOKE_KEY = "Joke key";
+
 }
