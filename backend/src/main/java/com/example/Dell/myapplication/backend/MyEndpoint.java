@@ -6,11 +6,10 @@
 
 package com.example.Dell.myapplication.backend;
 
+import com.example.JavaJokes;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
-
-import javax.inject.Named;
 
 /**
  * An endpoint class we are exposing
@@ -29,13 +28,15 @@ public class MyEndpoint {
     /**
      * A simple endpoint method that takes a name and says Hi back
      */
-    @ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("name") String name) {
-        MyBean response = new MyBean();
-        response.setData("Hi, " + name);
 
+
+    @ApiMethod(name = "getJoke")
+    public MyBean getJoke() {
+        MyBean response = new MyBean();
+
+        JavaJokes joker = new JavaJokes();
+        response.setData(joker.getJoke());
         return response;
     }
-
 
 }
