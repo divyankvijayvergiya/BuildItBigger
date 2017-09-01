@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidLibrary</string>
+    <string name="joke">Please provide a joke for me</string>
+    <string name="action_settings">Settings</string>
 </resources>

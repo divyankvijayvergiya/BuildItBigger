@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.free;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,12 +8,19 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.udacity.gradle.builditbigger.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 
 /**
  * A placeholder fragment containing a simple view.
  */
 public class MainActivityFragment extends Fragment {
+   @BindView(R.id.progress) MaterialProgressBar materialProgressBar;
 
     public MainActivityFragment() {
     }
@@ -31,6 +38,14 @@ public class MainActivityFragment extends Fragment {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
         mAdView.loadAd(adRequest);
+        ButterKnife.bind(this,root);
         return root;
+    }
+    @OnClick(R.id.tell_joke)
+    public void tellJoke(View view) {
+        materialProgressBar.setVisibility(View.VISIBLE);
+        new EndpointsAsyncTask(getActivity() , materialProgressBar).execute();
+
+
     }
 }
