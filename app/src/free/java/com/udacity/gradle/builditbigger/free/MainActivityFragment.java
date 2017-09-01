@@ -20,7 +20,7 @@ import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
  * A placeholder fragment containing a simple view.
  */
 public class MainActivityFragment extends Fragment {
-   @BindView(R.id.progress) MaterialProgressBar materialProgressBar;
+   @BindView(R.id.progress_bar) MaterialProgressBar materialProgressBar;
 
     public MainActivityFragment() {
     }

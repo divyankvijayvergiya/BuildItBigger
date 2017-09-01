@@ -240,5 +240,11 @@
     <orderEntry type="module" module-name="joketelling" exported="" />
     <orderEntry type="module" module-name="backend" exported="" />
     <orderEntry type="module" module-name="androidlibrary" exported="" />
+    <orderEntry type="module" module-name="joketelling" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="androidlibrary" exported="" />
+    <orderEntry type="module" module-name="joketelling" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="androidlibrary" exported="" />
   </component>
 </module>
