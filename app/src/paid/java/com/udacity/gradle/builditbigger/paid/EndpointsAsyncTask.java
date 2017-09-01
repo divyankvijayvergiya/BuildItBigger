@@ -11,7 +11,6 @@ import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.IAsyncTaskListener;
 
 import java.io.IOException;
 
@@ -26,7 +25,6 @@ public class EndpointsAsyncTask extends AsyncTask<Void,Void,String> {
     private static MyApi myApiService = null;
     private Context context;
     private ProgressBar mProgressBar;
-    private IAsyncTaskListener iAsyncTaskListener;
 
     public EndpointsAsyncTask(Context context, ProgressBar progressBar){
 

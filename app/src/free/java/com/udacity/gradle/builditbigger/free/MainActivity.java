@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.free;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
