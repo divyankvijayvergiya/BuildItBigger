@@ -2,8 +2,6 @@ package com.udacity.gradle.builditbigger;
 
 import android.support.test.runner.AndroidJUnit4;
 
-import com.udacity.gradle.builditbigger.paid.EndpointsAsyncTask;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
