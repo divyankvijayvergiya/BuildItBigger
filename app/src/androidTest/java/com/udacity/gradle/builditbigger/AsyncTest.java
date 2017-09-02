@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
 import java.util.concurrent.TimeUnit;
 
-import static android.support.test.InstrumentationRegistry.getContext;
+import static android.support.test.InstrumentationRegistry.getTargetContext;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.fail;
 
@@ -22,7 +22,7 @@ public class AsyncTest{
     @Test
     public void test(){
         String string=null;
-        EndpointsAsyncTask task=new EndpointsAsyncTask(getContext(),null);
+        EndpointsAsyncTask task=new EndpointsAsyncTask(getTargetContext(),null);
         task.execute();
 
         try {

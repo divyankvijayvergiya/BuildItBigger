@@ -26,6 +26,8 @@
             </intent-filter>
         </activity>
         <!-- Include the AdActivity configChanges and theme. -->
+        <activity android:name="application.example.com.androidlibrary.JokeActivity"></activity>
+
 
     </application>
 
